@@ -31,7 +31,7 @@ for item in categories:
         article_wordcount = article_page.find('meta', {"name": 'its_wordcount'})['content']
         article_updatetime = article_page.find('meta', {"name": 'article_updatetime'})['content']
         articel_publication = article_page.find('meta', {"name": 'its_publication'})['content']
-        article_title = article_page.find('meta', {"name": 'its_title'})['content'].get_text()
+        article_title = article_page.find('meta', {"name": 'its_title'})['content']
         article_tags = article_page.find('meta', {"name": 'its_tag'})['content']
         article_content = ""
         article_contents = article_page.find_all('p', class_="Normal")
